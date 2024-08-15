@@ -1,7 +1,7 @@
 ﻿
 namespace Laboratorio3_B
 {
-    public class Cliente
+    public abstract class Cliente
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -16,7 +16,7 @@ namespace Laboratorio3_B
             Phone = phone;
 
         }
-        public virtual bool IsVIP { get; }
+        public abstract bool IsVIP { get; }
 
         public void MostrarInformacion()
         {

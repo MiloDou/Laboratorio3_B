@@ -6,8 +6,8 @@ namespace Laboratorio3_B
 {
     public class Management
     {
-        private List<Cliente> clientes;
-        private List<Reserva> reservas;
+        public List<Cliente> clientes;
+        public List<Reserva> reservas;
 
         public Management()
         {
@@ -32,7 +32,7 @@ namespace Laboratorio3_B
                 Console.Write("Escriba teléfono: ");
                 int telefono = Convert.ToInt32(Console.ReadLine());
 
-                Cliente nuevoCliente = new Cliente(id, nombre, email, telefono);
+                Cliente nuevoCliente = new ClienteVip(id, nombre, email, telefono);
                 clientes.Add(nuevoCliente);
                 Console.WriteLine($"\nCliente {nombre} registrado correctamente.");
 

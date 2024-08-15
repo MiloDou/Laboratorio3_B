@@ -26,7 +26,7 @@ namespace Laboratorio3_B
         public double CalcularTotal()
         {
             double total = Platillos.Sum(p => p.Precio);
-            if (ClienteVip == ClienteAsociado)
+            if (ClienteAsociado.IsVIP)
             {
                 total *= 0.95; 
             }
